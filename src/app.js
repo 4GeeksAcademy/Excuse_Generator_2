@@ -4,13 +4,15 @@ let what = ["my homework", "the keys", "the car"];
 let when = [ "before the class","right on time", "when I finished", "during my lunch", "while I was praying"];
 
 function Generadorexcusas(quien, action, que, cuando) {
-  let numQuien = Math.floor(Math.random() * quien.length);
-  let numAction = Math.floor(Math.random() * action.length);
-  let numQue = Math.floor(Math.random() * que.length);
-  let numCuando = Math.floor(Math.random() * cuando.length);
+  let numQuien = Math.floor(Math.random()* quien.length);
+  let numAction = Math.floor(Math.random()* action.length);
+  let numQue = Math.floor(Math.random()* que.length);
+  let numCuando = Math.floor(Math.random()* cuando.length);
+ 
+  let e = " ";
 
   return (
-    quien[numQuien] +" "+ que[numQue] +" "+action[numAction] +" "+cuando[numCuando]);
+    quien[numQuien] +e+ que[numQue] +e+action[numAction] +e+cuando[numCuando]);
 }
 function onLoad() {
   let excusa = document.getElementById("excusa");
