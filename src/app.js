@@ -11,8 +11,7 @@ function Generadorexcusas(quien, action, que, cuando) {
  
   let e = " ";
 
-  return (
-    quien[numQuien] +e+ que[numQue] +e+action[numAction] +e+cuando[numCuando]);
+  return (quien[numQuien]+e+que[numAction]+e+action[numQue]+e+cuando[numCuando]);
 }
 function onLoad() {
   let excusa = document.getElementById("excusa");
